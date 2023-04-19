@@ -85,6 +85,8 @@ def komenci(message):
     global LITERA_KIOMO
     global LITERA_OFTO
 
+    identigilo = message.from_user.id
+
     UNIKAJ_IDENTIGILOJ[identigilo].clear()
     MESAGXA_KIOMO[identigilo].clear()
     LITERA_KIOMO[identigilo].clear()
