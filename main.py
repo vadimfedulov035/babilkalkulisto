@@ -52,14 +52,14 @@ def konkludi(proporciaro):
     teksto = ""
     sxercaro = [
         "👀 The ideal quantum observer 👀\n",
-        "💀 To be, or not to be, that is the question! 💀\n",
-        "☢  Hazardous correlation, not causation ☢\n",
+        "💀 To be, or not to be, that is the question. 💀\n",
+        "☢  Hazardous correlation, not causation!? ☢\n",
         "🚃 Here comes the train driver! 🚃\n",
-        "🛸 I am ready to pilot UFO with you 🛸\n",
-        "🌠 Couples look at the shooting stars 🌠\n",
+        "🛸 I am ready to pilot UFO with you! 🛸\n",
+        "🌠 Couples look at the shooting stars... 🌠\n",
         "🌌 To infinity and beyond! 🌌\n",
         "🌙 The moon is beautiful, isn't it? 🌙\n",
-        "🎃 You are at some intrigant wizard 🎃\n",
+        "🎃 You are at home of some intrigant wizard! 🎃\n",
         "👻 You are visiting a phantom land, traveller! 👻\n",
         "☠️  Abandon hope all ye who enter here. ☠️\n",
         "💯 It's over, isn't it? 💯\n",
@@ -95,14 +95,14 @@ def komenci(message):
     bonvenaro = [
         "Hello, I am a bot analysing conversations, made to measure the writing relation in your relationship!\n",
         "/start to (re)start!\n",
-        "/k to calculate the relation and conclusions\n",
-        "/m to see all possible conclusions\n",
+        "/r to calculate the relation and make the conclusions\n",
+        "/all to see all the possible conclusions\n",
     ]
     teksto = f"{bonvenaro[0]}{bonvenaro[1]}{bonvenaro[2]}{bonvenaro[3]}"
     bot.send_message(message.from_user.id, teksto)
 
 
-@bot.message_handler(commands=['m'])
+@bot.message_handler(commands=['all'])
 def montri(message):
 
     proporciaro = [[f"{i}%", i, None, None] for i in range(0, 101, 10)]
@@ -111,7 +111,7 @@ def montri(message):
         bot.send_message(message.from_user.id, konkludo)
 
 
-@bot.message_handler(commands=['k'])
+@bot.message_handler(commands=['r'])
 def kalkuli(message):
 
     global UNIKAJ_IDENTIGILOJ
@@ -170,8 +170,8 @@ def get_text_messages(message):
         uzantkasxnomo = message.forward_from.username
         uzantnomo = message.forward_from.first_name
     except AttributeError:
-        uzantkasxnomo = "@anonimo"
-        uzantnomo = "Anonimo"
+        uzantkasxnomo = "@anonim"
+        uzantnomo = "Anonim"
     uzanto = (uzantkasxnomo, uzantnomo)
     mesagxa_teksto = message.text
     mesagxa_longo = len(mesagxa_teksto)
