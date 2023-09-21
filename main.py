@@ -51,7 +51,7 @@ def konkludi(proporciaro):
     
     teksto = ""
     sxercaro = [
-        "👀 The ideal quantum ghoster 👀\n",
+        "👀 The ideal quantum observer 👀\n",
         "💀 To be, or not to be, that is the question! 💀\n",
         "☢  Hazardous correlation, not causation ☢\n",
         "🚃 Here comes the train driver! 🚃\n",
@@ -69,7 +69,7 @@ def konkludi(proporciaro):
         match procento:
             case 0: grado = -1
             case _: grado = int(procento // 10)
-        teksto += f"La ŝercfrazo pri {uzantnomo}:\n"
+        teksto += f"The joke about {uzantnomo}:\n"
         teksto += sxercaro[grado + 1]
     
     konkludaro = kunigi_po(2, teksto)
@@ -94,7 +94,7 @@ def komenci(message):
 
     bonvenaro = [
         "Hello, I am a bot analysing conversations, made to measure the writing relation in your relationship!\n",
-        "/start for (re)start!\n",
+        "/start to (re)start!\n",
         "/k to calculate the relation and conclusions\n",
         "/m to see all possible conclusions\n",
     ]
