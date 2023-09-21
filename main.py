@@ -39,9 +39,9 @@ def kunigi_po(sxovo, teksto, apartigilo='\n'):
 
 def taksi(proporciaro, tuta_mesagxa_kiomo, tuta_litera_kiomo):
 
-    teksto = f"La analizo baze de {tuta_mesagxa_kiomo} da mesaĝoj kaj {tuta_litera_kiomo} da literaĵoj:\n"
+    teksto = f"The analysis based on {tuta_mesagxa_kiomo} of messages and {tuta_litera_kiomo} of letters:\n"
     for uzantnomo, procento, baro, entropio in proporciaro:
-        teksto += f"{uzantnomo}: {procento}% kun {entropio} da hazardeco\n"
+        teksto += f"{uzantnomo}: {procento}% with {entropio} of randomness\n"
         teksto += f"{baro}\n"
 
     return teksto
@@ -51,18 +51,18 @@ def konkludi(proporciaro):
     
     teksto = ""
     sxercaro = [
-        "👀 lukin lukin lukin 👀\n",
-        "💀 Esti aŭ ne esti, jen la demando! 💀\n",
-        "☢ Ĉu ne heziti viziti? ☢\n",
-        "🚃 Jen la vagonara estro! 🚃\n",
-        "🛸 Mi estas nifoveturisto 🛸\n",
-        "🌠 Duopoj rigardas la falstelojn 🌠\n",
-        "🌌 Al senfineco kaj preter! 🌌\n",
-        "🌙 La luno hodiaŭ elstare belas, ĉu ne? 🌙\n",
-        "🎃 Vi hejmas ĉe iu intriganta sorĉisto 🎃\n",
-        "👻 Vi vizitis la fantomlandon, vojaĝanto! 👻\n",
-        "☠️ Forlasu la esperon, ĉiu eniranto. ☠️\n",
-        "💯 La fino, ĉu, ĉu ne? 💯\n",
+        "👀 The ideal quantum ghoster 👀\n",
+        "💀 To be, or not to be, that is the question! 💀\n",
+        "☢  Hazardous correlation, not causation ☢\n",
+        "🚃 Here comes the train driver! 🚃\n",
+        "🛸 I am ready to pilot UFO with you 🛸\n",
+        "🌠 Couples look at the shooting stars 🌠\n",
+        "🌌 To infinity and beyond! 🌌\n",
+        "🌙 The moon is beautiful, isn't it? 🌙\n",
+        "🎃 You are at some intrigant wizard 🎃\n",
+        "👻 You are visiting a phantom land, traveller! 👻\n",
+        "☠️  Abandon hope all ye who enter here. ☠️\n",
+        "💯 It's over, isn't it? 💯\n",
     ]
 
     for uzantnomo, procento, _, _ in proporciaro:
@@ -93,10 +93,10 @@ def komenci(message):
     LITERA_OFTO[identigilo].clear()
 
     bonvenaro = [
-        "Saluton, mi estas roboto analizanta babilejojn, sendu al mi mesaĝojn!\n",
-        "/start por (re)komenci!\n",
-        "/m por vidi ĉiujn eblajn konkludojn\n",
-        "/k por kalkuli takson kaj konkludojn\n",
+        "Hello, I am a bot analysing conversations, made to measure the writing relation in your relationship!\n",
+        "/start for (re)start!\n",
+        "/k to calculate the relation and conclusions\n",
+        "/m to see all possible conclusions\n",
     ]
     teksto = f"{bonvenaro[0]}{bonvenaro[1]}{bonvenaro[2]}{bonvenaro[3]}"
     bot.send_message(message.from_user.id, teksto)
