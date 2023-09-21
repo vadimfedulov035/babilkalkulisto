@@ -39,7 +39,7 @@ def kunigi_po(sxovo, teksto, apartigilo='\n'):
 
 def taksi(proporciaro, tuta_mesagxa_kiomo, tuta_litera_kiomo):
 
-    teksto = f"The analysis based on {tuta_mesagxa_kiomo} of messages and {tuta_litera_kiomo} of letters:\n"
+    teksto = f"The analysis based on {tuta_mesagxa_kiomo} messages and {tuta_litera_kiomo} letters:\n"
     for uzantnomo, procento, baro, entropio in proporciaro:
         teksto += f"{uzantnomo}: {procento}% with {entropio} of randomness\n"
         teksto += f"{baro}\n"
