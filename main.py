@@ -53,7 +53,7 @@ def konkludi(proporciaro):
     sxercaro = [
         "👀 The ideal quantum observer 👀\n",
         "💀 To be, or not to be, that is the question. 💀\n",
-        "☢  Hazardous correlation, not causation!? ☢\n",
+        "☢  Hazardous correlation, or causation? ☢\n",
         "🚃 Here comes the train driver! 🚃\n",
         "🛸 I am ready to pilot UFO with you! 🛸\n",
         "🌠 Couples look at the shooting stars... 🌠\n",
@@ -93,7 +93,7 @@ def komenci(message):
     LITERA_OFTO[identigilo].clear()
 
     bonvenaro = [
-        "Hello, I am a bot analysing conversations, made to measure the writing relation in your relationship!\n",
+        "Hello, I am a bot analysing conversations, made to measure writing relation in your relationship!\n",
         "/start to (re)start!\n",
         "/r to calculate the relation and make the conclusions\n",
         "/all to see all the possible conclusions\n",
